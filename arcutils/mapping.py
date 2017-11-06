@@ -91,8 +91,8 @@ class EasyMapDoc(object):
     >>> arcpy.mapping.AddLayer(df, myLayer, 'TOP')
 
     >>> # And now with an ``EasyMapDoc``:
-    >>> import gisutils
-    >>> ezmd = gisutils.mapping.EasyMapDoc('CURRENT')
+    >>> import arcutils
+    >>> ezmd = arcutils.mapping.EasyMapDoc('CURRENT')
     >>> ezmd.add_layer(myLayer)
 
     """
@@ -137,8 +137,8 @@ class EasyMapDoc(object):
 
         Examples
         --------
-        >>> import gisutils
-        >>> ezmd = gisutils.mapping.EasyMapDoc('CURRENT')
+        >>> import arcutils
+        >>> ezmd = arcutils.mapping.EasyMapDoc('CURRENT')
         >>> wetlands = ezmd.findLayerByName("wetlands")
         >>> if wetlands is not None:
         ...     # do something with `wetlands`
@@ -173,9 +173,9 @@ class EasyMapDoc(object):
 
         Examples
         --------
-        >>> import gisutils
-        >>> ezmd = gisutils.mapping.EasyMapDoc('CURRENT')
-        >>> watersheds = gisutils.load_data("C:/gis/hydro.gdb/watersheds")
+        >>> import arcutils
+        >>> ezmd = arcutils.mapping.EasyMapDoc('CURRENT')
+        >>> watersheds = arcutils.load_data("C:/gis/hydro.gdb/watersheds")
         >>> ezmd.add_layer(watersheds)
 
         """

@@ -59,8 +59,8 @@ def Extension(name):
 
     Examples
     --------
-    >>> import gisutils, arcpy
-    >>> with gisutils.mapping.Extension("spatial"):
+    >>> import arcutils, arcpy
+    >>> with arcutils.mapping.Extension("spatial"):
     ...     arcpy.sa.Hillshade("C:/data/dem.tif")
 
     """
@@ -92,8 +92,8 @@ def OverwriteState(state):
 
     Examples
     --------
-    >>> import gisutils
-    >>> with gisutils.mapping.OverwriteState(False):
+    >>> import arcutils
+    >>> with arcutils.mapping.OverwriteState(False):
     ...     # some operation that should fail if output already exists
 
     """
@@ -124,8 +124,7 @@ def WorkSpace(path):
 
     Examples
     --------
-    >>> import gisutils
-    >>> with gisutils.mapping.OverwriteState(False):
+    >>> import arcutils.mapping.OverwriteState(False):
     ...     # some operation that should fail if output already exists
 
     """
