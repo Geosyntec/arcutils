@@ -102,6 +102,6 @@ def test_RasterTemplate():
 @pytest.mark.skipif(arcpy is None, reason='No arcpy')
 def test_get_field_names():
     expected = [u'FID', u'Shape', u'Station', u'Latitude', u'Longitude']
-    layer = resource_filename('gisutils.tests._data.crapy.get_field_names', 'input.shp')
+    layer = resource_filename('arcutils.tests._data.crapy.get_field_names', 'input.shp')
     result = crapy.get_field_names(layer)
     assert result == expected
